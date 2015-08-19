@@ -62,7 +62,7 @@ var blob2;
 var blob3;
 
 var xhr = new XMLHttpRequest();
-xhr.open('GET', 'http://url/path/to/system-part1-v0.4.4-rc.3-photon.bin', true);
+xhr.open('GET', 'https://github.com/spark/firmware/releases/download/v0.4.4-rc.5/system-part1-0.4.4-rc.5-photon.bin', true);
 xhr.responseType = 'blob';
 
 xhr.onload = function(e) {
@@ -75,7 +75,7 @@ xhr.onload = function(e) {
 xhr.send();
 /*======================================================================================*/
 var xhr = new XMLHttpRequest();
-xhr.open('GET', 'http://url/path/to/system-part2-v0.4.4-rc.3-photon.bin', true);
+xhr.open('GET', 'https://github.com/spark/firmware/releases/download/v0.4.4-rc.5/system-part2-0.4.4-rc.5-photon.bin', true);
 xhr.responseType = 'blob';
 
 xhr.onload = function(e) {
@@ -88,7 +88,7 @@ xhr.onload = function(e) {
 xhr.send();
 /*======================================================================================*/
 var xhr = new XMLHttpRequest();
-xhr.open('GET', 'url/path/to/tinker-v0.4.4-rc.2-photon.bin', true);
+xhr.open('GET', 'https://github.com/spark/firmware/releases/download/v0.4.4-rc.2/tinker-v0.4.4-rc.2-photon.bin', true);
 xhr.responseType = 'blob';
 
 xhr.onload = function(e) {
@@ -113,7 +113,7 @@ function PhotonUpdate(deviceId, part){
   }
   if (part == 3){
     blob = blob3;
-    if (confirm("Make sure you have updated your Photon to 0.4.3rc2 before flashing Tinker or it may not work! \n \n Do you wish to continue?") !== true) {
+    if (confirm("Make sure you have updated your Photon to the latest version before flashing Tinker or it may not work! \n \n Do you wish to continue?") !== true) {
       return;
     }
   }
@@ -273,7 +273,7 @@ function LoggedIn(data){
       }
       $('#status tbody').append(
         '<tr class="warning">'+
-          '<td colspan="3">Clicking the update buttons will allow you to upgrade your system firmware to 0.4.4-rc3. Click one first, wait untill that is finished, then, and only then, click two. <br/>' +
+          '<td colspan="3">Clicking the update buttons will allow you to upgrade your system firmware to 0.4.4-rc5. Click one first, wait untill that is finished, then, and only then, click two. <br/>' +
           'These updates can take several minutes each. Click them only ONCE! WAIT UNTIL YOUR DEVICE IS BACK TO BREATHING CYAN! Only after updating your Photon to the latest version will the Tinker firmware work. Do not attempt to flashing that beforehand, for it will not work.</td>' +
         '</tr>'
       );
