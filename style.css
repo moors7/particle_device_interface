@@ -1,0 +1,11 @@
+/* CSS for styling/stretching the login button */ 
+
+.spark-login-button {
+  width: 100% !important;			
+  font-size: 17px !important;
+  margin-bottom: 15px !important;
+}
+
+#spark-login-form-button {
+  width: 248px !important;
+}
